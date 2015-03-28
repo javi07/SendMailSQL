@@ -1,0 +1,11 @@
+
+
+  Exec Server.msdb.dbo.sp_send_dbmail                                                             
+  @profile_name='sql profile',  --Profile SQL whir mail acount   
+  @recipients=@Correo,          --Variable with recipient                                                 
+  @subject=@Title ,             --Subject                                               
+  @body=@Mensaje ,              --Body of the message, can use a long varchar whit html structure                                                 
+  @body_format='HTML'           --Format         
+  ,@blind_copy_recipients=@CCopiaO  --Blind Copy of the message                                                                            
+  
+  
